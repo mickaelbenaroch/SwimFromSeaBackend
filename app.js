@@ -11,7 +11,7 @@ var cors = require('cors')
 
 // initialize our express app
 const app = express();
-app.use(allowCrossDomain);
+
 app.use(cors());
 
 app.use(function(req, res, next) {
