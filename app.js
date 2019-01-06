@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(function(req, res, next) {
+app.use('/',function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
 
  let port = process.env.PORT || 8082
 
-
+ var server = app.listen(8081, 'localhost');
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
