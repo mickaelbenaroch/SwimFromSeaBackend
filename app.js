@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //Import the mongoose module
 var mongoose = require('mongoose');
 const express = require('express');
@@ -9,14 +11,15 @@ var latlonSchema = require('./Models/latlon');
 var landlocked = require('./Models/landlock')
 var cors = require('cors');
 
-var port = normalizePort(process.env.PORT || '3001');
-app.set('port', port);
-
 // initialize our express app
 const app = express();
 app.use(cors());
 
+app.set('port', port);
+var port = normalizePort(process.env.PORT || '3001');
+
 app.get('/', function (req, res) {
+    console.log('-----');
     //Set up default mongoose connection
     var mongoDB = 'mongodb://usr1_name:usr1_pass@ds119988.mlab.com:19988/swim_from_sea';
     mongoose.connect(mongoDB);
@@ -223,3 +226,22 @@ app.listen(port, () => {
 });
 
 
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+  
+    if (isNaN(port)) {
+      // named pipe
+      return val;
+    }
+  
+    if (port >= 0) {
+      // port number
+      return port;
+    }
+  
+    return false;
+  }
