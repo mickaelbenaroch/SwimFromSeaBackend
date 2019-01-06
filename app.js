@@ -3,20 +3,26 @@
 //Import the mongoose module
 var mongoose = require('mongoose');
 const express = require('express');
-var router = express.Router();
+//var router = express.Router();
 var groupBy = require('group-by');
 var modelClass = require('./Models/resultModel');
 var recordSchema = require('./Models/record');
 var latlonSchema = require('./Models/latlon');
-var landlocked = require('./Models/landlock')
-var cors = require('cors');
+//var landlocked = require('./Models/landlock')
+//var cors = require('cors');
 
 // initialize our express app
 const app = express();
-app.use(cors());
+//app.use(cors());
 
 app.set('port', port);
 var port = normalizePort(process.env.PORT || '3001');
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 app.get('/', function (req, res) {
     console.log('-----');
