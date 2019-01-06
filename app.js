@@ -11,10 +11,8 @@ var cors = require('cors')
 
 // initialize our express app
 const app = express();
-
-app.use(cors);
-
-let port = process.env.PORT || 8082;
+app.use(cors());
+let port = 3000;
 
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
@@ -158,20 +156,20 @@ app.get('/', function (req, res) {
     //Bind connection to error event (to get notification of connection errors)
     db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-      var landlockArray = [];
-      var resultLandLock = [];
-    landlocked.find(function (err, doc) {
-        if(err){
-        console.log("an error ocurred on reading the latlon collection"  + err);
-        };
-        if(doc){
-            landlockArray = doc;
-           landlockArray.forEach(elem => {
-                if(elem !== null)
-                    resultLandLock.push(elem.symbol);
-            });
+    //   var landlockArray = [];
+    //   var resultLandLock = [];
+    // landlocked.find(function (err, doc) {
+    //     if(err){
+    //     console.log("an error ocurred on reading the latlon collection"  + err);
+    //     };
+    //     if(doc){
+    //         landlockArray = doc;
+    //        landlockArray.forEach(elem => {
+    //             if(elem !== null)
+    //                 resultLandLock.push(elem.symbol);
+    //         });
            
-        }});
+    //     }});
 
        var response = {
         'AFG': {fillKey: 'SEASHORE'},
