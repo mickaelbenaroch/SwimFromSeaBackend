@@ -3,20 +3,19 @@
 //Import the mongoose module
 var mongoose = require('mongoose');
 const express = require('express');
-//var router = express.Router();
+var router = express.Router();
 var groupBy = require('group-by');
 var modelClass = require('./Models/resultModel');
 var recordSchema = require('./Models/record');
 var latlonSchema = require('./Models/latlon');
-//var landlocked = require('./Models/landlock')
+var landlocked = require('./Models/landlock')
 //var cors = require('cors');
 
 // initialize our express app
 const app = express();
 //app.use(cors());
 
-app.set('port', port);
-var port = normalizePort(process.env.PORT || '3001');
+var port = process.env.PORT || 3000
 
 app.use(function(req, res, next) {
     var allowedOrigins = ['https://sfsfrontendapp.herokuapp.com', 'http://localhost:8020', 'http://localhost:3000'];
@@ -237,6 +236,8 @@ app.get('/landlock', function (req, res) {
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
+
+
 
 
 /**
