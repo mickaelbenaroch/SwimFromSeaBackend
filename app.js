@@ -29,8 +29,8 @@ app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Credentials', true);
     return next();
   });
-  
-router.get('/', function (req, res) {
+
+app.get('/', function (req, res) {
     console.log('-----');
     //Set up default mongoose connection
     var mongoDB = 'mongodb://usr1_name:usr1_pass@ds119988.mlab.com:19988/swim_from_sea';
@@ -155,7 +155,7 @@ router.get('/', function (req, res) {
 
 });
 
-router.get('/landlock', function (req, res) {
+app.get('/landlock', function (req, res) {
 
     //Set up default mongoose connection
     var mongoDB = 'mongodb://usr1_name:usr1_pass@ds119988.mlab.com:19988/swim_from_sea';
