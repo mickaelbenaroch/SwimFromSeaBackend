@@ -29,6 +29,7 @@ app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Credentials', true);
     return next();
   });
+  
 router.get('/', function (req, res) {
     console.log('-----');
     //Set up default mongoose connection
