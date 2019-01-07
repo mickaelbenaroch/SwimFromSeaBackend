@@ -15,7 +15,7 @@ var landlocked = require('./Models/landlock')
 const app = express();
 //app.use(cors());
 
-var port = process.env.PORT || 3000
+const PORT = process.env.PORT
 
 app.use(function(req, res, next) {
     var allowedOrigins = ['https://sfsfrontendapp.herokuapp.com', 'http://localhost:8020', 'http://localhost:3000'];
@@ -233,9 +233,7 @@ app.get('/landlock', function (req, res) {
 });
 
 
-app.listen(port, () => {
-    console.log('Server is up and running on port numner ' + port);
-});
+app.listen(PORT);
 
 
 
