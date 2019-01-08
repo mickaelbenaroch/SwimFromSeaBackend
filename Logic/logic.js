@@ -140,56 +140,56 @@ class Record {
                             resultLandLock.push(elem.symbol );
                         }
                     })
-                    res(resultLandLock);
+                    //res(resultLandLock);
                 }
             });
 
-            // var response = {
-            //     'AFG': { fillKey: 'SEASHORE' },
-            //     'AND': { fillKey: 'SEASHORE' },
-            //     'ARM': { fillKey: 'SEASHORE' },
-            //     'AUT': { fillKey: 'SEASHORE' },
-            //     'AFG': { fillKey: 'SEASHORE' },
-            //     'AZE': { fillKey: 'SEASHORE' },
-            //     'BLR': { fillKey: 'SEASHORE' },
-            //     'BTN': { fillKey: 'SEASHORE' },
-            //     'BOL': { fillKey: 'SEASHORE' },
-            //     'BOT': { fillKey: 'SEASHORE' },
-            //     'CAF': { fillKey: 'SEASHORE' },
-            //     'CZE': { fillKey: 'SEASHORE' },
-            //     'ETH': { fillKey: 'SEASHORE' },
-            //     'HNG': { fillKey: 'SEASHORE' },
-            //     'KAZ': { fillKey: 'SEASHORE' },
-            //     'KGZ': { fillKey: 'SEASHORE' },
-            //     'LAO': { fillKey: 'SEASHORE' },
-            //     'LSO': { fillKey: 'SEASHORE' },
-            //     'LIE': { fillKey: 'SEASHORE' },
-            //     'LUX': { fillKey: 'SEASHORE' },
-            //     'MKD': { fillKey: 'SEASHORE' },
-            //     'MWI': { fillKey: 'SEASHORE' },
-            //     'MLI': { fillKey: 'SEASHORE' },
-            //     'MDA': { fillKey: 'SEASHORE' },
-            //     'MNG': { fillKey: 'SEASHORE' },
-            //     'NPL': { fillKey: 'SEASHORE' },
-            //     'NGR': { fillKey: 'SEASHORE' },
-            //     'PRG': { fillKey: 'SEASHORE' },
-            //     'RRW': { fillKey: 'SEASHORE' },
-            //     'SMR': { fillKey: 'SEASHORE' },
-            //     'SRB': { fillKey: 'SEASHORE' },
-            //     'SVK': { fillKey: 'SEASHORE' },
-            //     'SSD': { fillKey: 'SEASHORE' },
-            //     'SUI': { fillKey: 'SEASHORE' },
-            //     'TJK': { fillKey: 'SEASHORE' },
-            //     'TCD': { fillKey: 'SEASHORE' },
-            //     'TKM': { fillKey: 'SEASHORE' },
-            //     'UGA': { fillKey: 'SEASHORE' },
-            //     'UZB': { fillKey: 'SEASHORE' },
-            //     'ZMB': { fillKey: 'SEASHORE' },
-            //     'ZWE': { fillKey: 'SEASHORE' },
-            //     'XWB': { fillKey: 'SEASHORE' },
-            //     'PRY': { fillKey: 'SEASHORE' }
-            // };
-      
+            var response = {
+                'AFG': { fillKey: 'SEASHORE' },
+                'AND': { fillKey: 'SEASHORE' },
+                'ARM': { fillKey: 'SEASHORE' },
+                'AUT': { fillKey: 'SEASHORE' },
+                'AFG': { fillKey: 'SEASHORE' },
+                'AZE': { fillKey: 'SEASHORE' },
+                'BLR': { fillKey: 'SEASHORE' },
+                'BTN': { fillKey: 'SEASHORE' },
+                'BOL': { fillKey: 'SEASHORE' },
+                'BOT': { fillKey: 'SEASHORE' },
+                'CAF': { fillKey: 'SEASHORE' },
+                'CZE': { fillKey: 'SEASHORE' },
+                'ETH': { fillKey: 'SEASHORE' },
+                'HNG': { fillKey: 'SEASHORE' },
+                'KAZ': { fillKey: 'SEASHORE' },
+                'KGZ': { fillKey: 'SEASHORE' },
+                'LAO': { fillKey: 'SEASHORE' },
+                'LSO': { fillKey: 'SEASHORE' },
+                'LIE': { fillKey: 'SEASHORE' },
+                'LUX': { fillKey: 'SEASHORE' },
+                'MKD': { fillKey: 'SEASHORE' },
+                'MWI': { fillKey: 'SEASHORE' },
+                'MLI': { fillKey: 'SEASHORE' },
+                'MDA': { fillKey: 'SEASHORE' },
+                'MNG': { fillKey: 'SEASHORE' },
+                'NPL': { fillKey: 'SEASHORE' },
+                'NGR': { fillKey: 'SEASHORE' },
+                'PRG': { fillKey: 'SEASHORE' },
+                'RRW': { fillKey: 'SEASHORE' },
+                'SMR': { fillKey: 'SEASHORE' },
+                'SRB': { fillKey: 'SEASHORE' },
+                'SVK': { fillKey: 'SEASHORE' },
+                'SSD': { fillKey: 'SEASHORE' },
+                'SUI': { fillKey: 'SEASHORE' },
+                'TJK': { fillKey: 'SEASHORE' },
+                'TCD': { fillKey: 'SEASHORE' },
+                'TKM': { fillKey: 'SEASHORE' },
+                'UGA': { fillKey: 'SEASHORE' },
+                'UZB': { fillKey: 'SEASHORE' },
+                'ZMB': { fillKey: 'SEASHORE' },
+                'ZWE': { fillKey: 'SEASHORE' },
+                'XWB': { fillKey: 'SEASHORE' },
+                'PRY': { fillKey: 'SEASHORE' }
+            };
+            res(response);
         }
         )
     };
