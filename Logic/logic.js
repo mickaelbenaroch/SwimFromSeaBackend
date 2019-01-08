@@ -137,10 +137,9 @@ class Record {
                     landlockArray = doc;
                     landlockArray.forEach(elem => {
                         if (elem !== null){
-                            var temp =  elem.symbol + `: {fillKey: 'SEASHORE'}`;
-                            resultLandLock.push(temp);
+                            resultLandLock.push(elem.symbol );
                         }
-                    });
+                    })
                     res(resultLandLock);
                 }
             });
