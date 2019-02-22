@@ -40,5 +40,17 @@ app.get('/landlock', function (req, res) {
     }); 
 });
 
+//Get landlock list Names route
+app.get('/landlocknames', function (req, res) {
+    recordModule.GetLandlockedCountriesListOnlyNames().then((data)=>{
+        res.status(200).send(data);
+        res.end();       
+    }).catch (err => {
+        res.status(500).json({error: err});
+    }); 
+});
+
+
+
 app.listen(PORT);
 

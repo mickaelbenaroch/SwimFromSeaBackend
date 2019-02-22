@@ -193,6 +193,30 @@ class Record {
         }
         )
     };
+
+
+    /*GET*/
+    GetLandlockedCountriesListOnlyNames() {
+        return new Promise((res, rej) => {
+
+            var landlockArray = [];
+            var resultLandLock = [];
+            landlocked.find(function (err, doc) {
+                if (err) {
+                    console.log("an error ocurred on reading the latlon collection" + err);
+                };
+                if (doc) {
+                    landlockArray = doc;
+                    landlockArray.forEach(elem => {
+                        if (elem !== null){
+                            resultLandLock.push(elem.symbol );
+                        }
+                    })
+                    res(resultLandLock);
+                }
+            });
+        })
+    };
 }
 
 module.exports = () => {
