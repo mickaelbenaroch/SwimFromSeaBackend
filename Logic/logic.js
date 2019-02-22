@@ -209,13 +209,14 @@ class Record {
                     landlockArray = doc;
                     landlockArray.forEach(elem => {
                         if (elem !== null){
-                            resultLandLock.push(elem.symbol );
+                            resultLandLock.push(elem);
                         }
                     })
                     res(resultLandLock);
                 }
             });
-        })
+        }
+        )
     };
 }
 
